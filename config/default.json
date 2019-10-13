@@ -1,0 +1,8 @@
+{
+  "exchanges": {
+    "dolar_today": {
+      "url": "https://twitter.com",
+      "account_path": "/dolartoday",
+    }
+  }
+}
