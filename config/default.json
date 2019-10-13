@@ -1,8 +1,9 @@
 {
   "exchanges": {
     "dolar_today": {
+      "endpoint":"dolartoday",
       "url": "https://twitter.com",
-      "account_path": "/dolartoday",
+      "account_path": "/dolartoday"
     }
   }
 }
