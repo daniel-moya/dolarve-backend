@@ -20,7 +20,12 @@ router.get('/exchange/:name', async (req, res) => {
         const $ = cheerio.load(html);
     
         const data = ($('p.ProfileHeaderCard-bio ')).text().split(' ');
-        res.status(200).send(data[data.indexOf('Bs.') + 1]);
+        const prices = {
+          id: config.exchanges.dolar_today.endpoint,
+          us: data[data.indexOf('Bs.') + 1],
+          eu: data[data.indexOf('€') + 3],
+        };
+        res.status(200).send(prices);
       }
     });
   }
